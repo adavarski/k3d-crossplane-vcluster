@@ -20,7 +20,7 @@ What do you do when RBAC with namespaces aren’t enough to meet your multi-tena
 
 
 
-![Presentation](./multi-tenancy-vcluster-crossplane-argocd-kubecon.pdf "Presentation")
+[Presentation](./multi-tenancy-vcluster-crossplane-argocd-kubecon.pdf "Presentation")
 
 Run your own [k3d](https://k3d.io/) cluster with [Crossplane](https://www.crossplane.io/) and deploy [ArgoCD](https://argoproj.github.io/cd/) instances onto [vclusters](https://www.vcluster.com/)
 
