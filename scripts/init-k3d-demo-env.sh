@@ -10,6 +10,7 @@ helm repo add argo https://argoproj.github.io/argo-helm && helm repo update
 # https://github.com/cf-kubecon23-demo/cf-kubecon23-demo/issues/2121
 kubectl create ns argocd
 cd argocd && ./apply.sh
-kubectl -n argocd apply ./ingress-argo.yaml
-kubectl -n argocd apply -f $MYDIR/../argocd-applications
+kubectl -n argocd apply ../ingress-argo.yaml
+kubectl -n argocd apply -f ../../argocd-applications
+
 
