@@ -12,7 +12,7 @@ What do you do when RBAC with namespaces aren’t enough to meet your multi-tena
 
 ##### Solution Architecture:
 
-<img src="pictures/solution-architecture.png?raw=true" width="900">
+<img src="pictures/solution-architecture-argocd.png?raw=true" width="900">
 
 ### VCluster Architecture:
 
