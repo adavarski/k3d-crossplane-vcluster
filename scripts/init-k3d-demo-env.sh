@@ -13,6 +13,10 @@ sleep 60
 cd argocd && ./apply.sh
 kubectl -n argocd apply -f ../ingress-argo.yaml
 kubectl -n argocd apply -f ../../argocd-applications
+sleep 60
+echo "ArcgoCD admin password:"
+kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d
+
 
 
 
