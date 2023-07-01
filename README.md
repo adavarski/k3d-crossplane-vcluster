@@ -1,5 +1,10 @@
 # Using Crossplane to deploy ArgoCD on vcluster
 
+How We Securely Scaled Multi-Tenancy with VCluster, Crossplane, and Argo CD.
+
+What do you do when RBAC with namespaces aren’t enough to meet your multi-tenancy needs? Namespaces are easy to implement but they generally do not provide the level of isolation that is needed when working with external users. Instead of running multiple clusters, which are complex to manage, hard to scale and often costly, we turned to vCluster. vCluster is an open source project that allows you to create virtual clusters in any Kubernetes cluster. Virtual clusters enjoy higher isolation than simple namespaces and can also be used for cluster level resources like CRDs without any versioning conflicts. Using virtual clusters in the Codefresh’s hosted GitOps platform that is powered by thousands of Argo instances we enabled high isolation between tenants while lowering the cost of application multi-tenancy. For most companies, multi-tenancy means supporting multiple teams within an organization, or perhaps a partner. For us, multi-tenancy means providing access to the general public. We needed to go deeper than RBAC, namespaces, and auditing. In this end-user talk, we’ll share how we leveraged vCluster, Crossplane, and Argo CD to approach multi-tenancy, scale, and security in a totally GitOps fashion. You’ve never seen vCluster scale like this before!
+
+
 Run your own [k3d](https://k3d.io/) cluster with [Crossplane](https://www.crossplane.io/) and deploy [ArgoCD](https://argoproj.github.io/cd/) instances onto [vclusters](https://www.vcluster.com/)
 ![Architecture](./pictures/architecture.png "Architecture")
 
@@ -39,4 +44,11 @@ Browser: http://argocd.192.168.1.99.nip.io:8888
 
 <img src="pictures/k3d-crossplane-arg-virtualargocd.png?raw=true" width="900">
 
-REF: https://www.youtube.com/watch?v=hFiHU6W4_z0
+REF: 
+
+- Demo: https://www.youtube.com/watch?v=hFiHU6W4_z0
+- https://github.com/janwillies/virtual-k8s-argocd
+- https://github.com/iam-veeramalla/k8s-crossplane-argocd
+
+
+
