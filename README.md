@@ -35,7 +35,14 @@ Run your own [k3d](https://k3d.io/) cluster with [Crossplane](https://www.crossp
 
 ### Access ArgoCD UI: 
 
-Browser: http://argocd.192.168.1.99.nip.io:8888
+```
+$ kubectl get ing -n argocd
+NAME             CLASS   HOSTS                        ADDRESS      PORTS   AGE
+argocd-ingress   nginx   argocd.192.168.1.99.nip.io   172.23.0.2   80      55m
+
+```
+
+Browser (ArgoCD UI): http://argocd.192.168.1.99.nip.io:8888
 
 ### Screenshots:
 
@@ -50,7 +57,26 @@ Browser: http://argocd.192.168.1.99.nip.io:8888
 Note: After uncomment customer2.yaml
 <img src="pictures/k3d-crossplane-argo-virtual-argocd-2-vclusters.png?raw=true" width="900">
 
+```
+$ kubectl get po --all-namespaces
+NAMESPACE           NAME                                                     READY   STATUS    RESTARTS   AGE
+kube-system         coredns-59b4f5bbd5-jw8b7                                 1/1     Running   0          60m
+kube-system         local-path-provisioner-76d776f6f9-s4zcj                  1/1     Running   0          60m
+kube-system         metrics-server-7b67f64457-nw8hd                          1/1     Running   0          60m
+kube-system         svclb-ingress-nginx-controller-8a713601-2m6sw            2/2     Running   0          58m
+ingress-nginx       ingress-nginx-controller-5ff6bb675f-9x5pl                1/1     Running   0          58m
+argocd              argocd-redis-7c9f8b6555-gjhq8                            1/1     Running   0          56m
+argocd              argocd-notifications-controller-7c8b57c4f8-jk7ln         1/1     Running   0          56m
+argocd              argocd-applicationset-controller-797b697bdd-cpwd2        1/1     Running   0          56m
+argocd              argocd-repo-server-657cdc694-pddr4                       1/1     Running   0          56m
+argocd              argocd-server-65bc7fd767-29gfz                           1/1     Running   0          56m
+argocd              argocd-application-controller-0                          1/1     Running   0          56m
+crossplane-system   crossplane-645745b895-2wgw4                              1/1     Running   0          54m
+crossplane-system   crossplane-rbac-manager-67b9754dc7-xjr8v                 1/1     Running   0          54m
+crossplane-system   provider-kubernetes-05f3a0c313f0-5cf8c89bbc-mw6dq        1/1     Running   0          53m
+crossplane-system   crossplane-provider-helm-59fc94cd939e-586986678d-zw248   1/1     Running   0          53m
 
+```
 
 REF: 
 
