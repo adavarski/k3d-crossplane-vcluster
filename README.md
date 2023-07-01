@@ -4,9 +4,13 @@ Run your own [k3d](https://k3d.io/) cluster with [Crossplane](https://www.crossp
 ![Architecture](./pictures/architecture.png "Architecture")
 
 ---
-## Requirements to run this demo
-1. k3d
-2. Helm
+### Dependencies
+
+- [Docker](https://docs.docker.com/engine/install/ubuntu/)
+- [k3d](https://k3d.io/#installation)
+- [kubectl](https://kubernetes.io/docs/tasks/tools/#kubectl)
+- [Helm](https://helm.sh/docs/intro/install/)
+
 ---
 ## What's in this repository?
 1. [Initialization script](scripts/init-k3d-demo-env.sh) - deploys k3d cluster and installs ArgoCD onto it. It also applies the [argocd-applications](argocd-applications) to this cluster.
@@ -20,8 +24,19 @@ Run your own [k3d](https://k3d.io/) cluster with [Crossplane](https://www.crossp
 3. Execute [initializtion script](scripts/init-k3d-demo-env.sh).
 4. Once all ArgoCD applications are synced, uncomment [customer2.yaml](virtualargocds/customer2.yaml), see that a namespace is created, with vcluster and ArgoCD deployed onto it.
 
-k3d-crossplane-argo-apps.png
-k3d-crossplane-arg-virtualargocd.png
-k3d-crossplane-argo-crossplane-resources.png
-k3d-crossplane-argo-app-crossplane.png
-architecture.png
+
+### Access ArgoCD UI: 
+
+Browser: http://argocd.192.168.1.99.nip.io:8888
+
+### Screenshots:
+
+<img src="pictures/k3d-crossplane-argo-apps.png?raw=true" width="900">
+
+<img src="pictures/k3d-crossplane-argo-app-crossplane.png?raw=true" width="900">
+
+<img src="pictures/k3d-crossplane-argo-crossplane-resources.png?raw=true" width="900">
+
+<img src="pictures/k3d-crossplane-arg-virtualargocd.png?raw=true" width="900">
+
+REF: https://www.youtube.com/watch?v=hFiHU6W4_z0
