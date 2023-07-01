@@ -56,7 +56,7 @@ Browser (ArgoCD UI): http://argocd.192.168.1.99.nip.io:8888
 
 <img src="pictures/k3d-crossplane-argo-virtual-argocd-2-vclusters.png?raw=true" width="900">
 
-Note: After uncomment customer2.yaml
+Note: After uncomment [customer2.yaml](virtualargocds/customer2.yaml)
 
 
 ```
