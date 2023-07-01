@@ -9,8 +9,10 @@ export KUBECONFIG=/tmp/k3d-cf-kubecon23-demo.config
 helm repo add argo https://argoproj.github.io/argo-helm && helm repo update
 # https://github.com/cf-kubecon23-demo/cf-kubecon23-demo/issues/2121
 kubectl create ns argocd
+sleep 60
 cd argocd && ./apply.sh
-kubectl -n argocd apply ../ingress-argo.yaml
+kubectl -n argocd apply -f ../ingress-argo.yaml
 kubectl -n argocd apply -f ../../argocd-applications
+
 
 
