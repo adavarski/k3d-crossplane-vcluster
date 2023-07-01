@@ -14,13 +14,13 @@ What do you do when RBAC with namespaces aren’t enough to meet your multi-tena
 
 <img src="pictures/solution-architecture-argocd.png?raw=true" width="900">
 
-### VCluster Architecture:
+#### VCluster Architecture:
 
 <img src="pictures/solution-architecture-vcluster.png?raw=true" width="900">
 
 
 
-[Presentation](./multi-tenancy-vcluster-crossplane-argocd-kubecon.pdf "Presentation")
+#### [Presentation](./multi-tenancy-vcluster-crossplane-argocd-kubecon.pdf "Presentation")
 
 Run your own [k3d](https://k3d.io/) cluster with [Crossplane](https://www.crossplane.io/) and deploy [ArgoCD](https://argoproj.github.io/cd/) instances onto [vclusters](https://www.vcluster.com/)
 
