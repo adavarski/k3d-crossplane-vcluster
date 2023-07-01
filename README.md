@@ -49,7 +49,7 @@ Browser: http://argocd.192.168.1.99.nip.io:8888
 
 REF: 
 
-- Demo Video: https://www.youtube.com/watch?v=hFiHU6W4_z0
+- Demo video: https://www.youtube.com/watch?v=hFiHU6W4_z0
 - Demo repo: https://github.com/codefresh-contrib/demo-crossplane-vcluster
 - https://github.com/janwillies/virtual-k8s-argocd
 - https://github.com/iam-veeramalla/k8s-crossplane-argocd
