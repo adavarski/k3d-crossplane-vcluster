@@ -1,7 +1,7 @@
 # Using Crossplane to deploy ArgoCD on vcluster
 
 Run your own [k3d](https://k3d.io/) cluster with [Crossplane](https://www.crossplane.io/) and deploy [ArgoCD](https://argoproj.github.io/cd/) instances onto [vclusters](https://www.vcluster.com/)
-![Architecture](architecture.png "Architecture")
+![Architecture](./pictures/architecture.png "Architecture")
 
 ---
 ## Requirements to run this demo
@@ -19,3 +19,9 @@ Run your own [k3d](https://k3d.io/) cluster with [Crossplane](https://www.crossp
 2. Replace repository URL in [crossplane-resources.yaml](argocd-applications/crosspalne-resources.yaml) and in [virtual-argocds.yaml](argocd-applications/virtual-argocds.yaml). 
 3. Execute [initializtion script](scripts/init-k3d-demo-env.sh).
 4. Once all ArgoCD applications are synced, uncomment [customer2.yaml](virtualargocds/customer2.yaml), see that a namespace is created, with vcluster and ArgoCD deployed onto it.
+
+k3d-crossplane-argo-apps.png
+k3d-crossplane-arg-virtualargocd.png
+k3d-crossplane-argo-crossplane-resources.png
+k3d-crossplane-argo-app-crossplane.png
+architecture.png
