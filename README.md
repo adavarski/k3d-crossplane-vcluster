@@ -10,6 +10,8 @@ Architecture:
 
 ![Architecture](./pictures/architecture.png "Architecture")
 
+Solution Architecture:
+
 <img src="pictures/solution-architecture.png?raw=true" width="900">
 
 Architecture VCluster:
