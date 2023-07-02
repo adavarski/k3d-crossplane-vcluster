@@ -97,6 +97,7 @@ REF:
 
 - Demo video: https://www.youtube.com/watch?v=hFiHU6W4_z0
 - Demo repo: https://github.com/codefresh-contrib/demo-crossplane-vcluster
+- https://github.com/loft-sh/vcluster
 - https://github.com/janwillies/virtual-k8s-argocd
 - https://github.com/iam-veeramalla/k8s-crossplane-argocd
 - etc.
