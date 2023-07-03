@@ -102,5 +102,5 @@ REF:
 - https://github.com/iam-veeramalla/k8s-crossplane-argocd
 - etc.
 
-
+Note: Note: Argo CLI, helm upgrade ingress-nginx ingress-nginx/ingress-nginx -n ingress-nginx --create-namespace --set controller.publishService.enabled=true --set controller.extraArgs.enable-ssl-passthrough=true
 
